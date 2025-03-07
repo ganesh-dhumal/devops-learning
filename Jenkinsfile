@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'git@github.com:ganesh-dhumal/devops-learning.git'
+                git branch: 'main', url: 'https://github.com/ganesh-dhumal/devops-learning.git'
             }
         }
 
         stage('Run a Script') {
             steps {
-                sh 'echo "🚀 Jenkins Pipeline is Running!"'
+                sh 'echo "🚀 Jenkins Pipeline is Running with a Public Repo!"'
             }
         }
     }
